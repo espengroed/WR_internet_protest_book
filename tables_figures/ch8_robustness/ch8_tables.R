@@ -29,8 +29,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -81,8 +81,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -138,8 +138,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Last protest repressed, sending",
                         "Weeks since protest, receiving (ln)",
@@ -197,8 +197,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Distance, sending and receiving (ln)",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",

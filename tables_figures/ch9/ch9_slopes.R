@@ -14,7 +14,7 @@ gg1 <- ggplot(cityyear.data[!is.na(cityyear.data$v2x_frassoc_thick_l), ], aes(x 
   geom_smooth(method = "glm", se = TRUE, formula = "y ~ log(x+1)", method.args = list(family = "binomial"(link = "logit")), color = "black") +
   facet_wrap(~v2x_frassoc_thick_l_dich, labeller = as_labeller(label), ncol=2) +
   #  geom_point(alpha = .1, size = 1, color = "darkgrey") +
-  xlab("Internet penetration (ln)") + ylab("Probability of protest occurrence") +
+  xlab("Internet penetration") + ylab("Probability of protest occurrence") +
   geom_hline(yintercept = 0, lty=2) +
   theme_bw() +
   geom_rug(sides="b") + coord_cartesian(ylim = c(0,.30)) +
@@ -89,7 +89,7 @@ gg1 <- ggplot(cityweek.data.persistence[!is.na(cityweek.data.persistence$v2x_fra
   geom_smooth(method = "glm", se = TRUE, formula = "y ~ log(x+1)", method.args = list(family = "binomial"(link = "logit")), color = "black") +
   facet_wrap(~v2x_frassoc_thick_l_dich, labeller = as_labeller(label), ncol=2) +
   #  geom_point(alpha = .1, size = 1, color = "darkgrey") +
-  xlab("Internet penetration (ln)") + ylab("Probability of protest persistence") +
+  xlab("Internet penetration") + ylab("Probability of protest persistence") +
   geom_hline(yintercept = 0, lty=2) +
   theme_bw() +
   geom_rug(sides="b") + coord_cartesian(ylim = c(0,.25)) +

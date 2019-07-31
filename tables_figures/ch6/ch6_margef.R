@@ -63,7 +63,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration (ln)') + ylab('Probability of protest occurrence') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration') + ylab('Probability of protest occurrence') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 

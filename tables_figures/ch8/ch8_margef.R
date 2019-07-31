@@ -87,7 +87,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, sending (ln)') + ylab('Change in probability of protest diffusion as \n Internet penetration (receiving city) increases') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, sending') + ylab('Change in probability of protest diffusion as \n Internet penetration (receiving city) increases') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 
@@ -211,7 +211,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, receiving (ln)') + ylab('Change in probability of protest diffusion as \n Internet penetration (sending city) increases') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, receiving') + ylab('Change in probability of protest diffusion as \n Internet penetration (sending city) increases') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 

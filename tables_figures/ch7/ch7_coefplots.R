@@ -7,8 +7,8 @@ ses <- ses[2:9, 2]
 
 ylo <- coefs - 1.96*ses
 yhi <- coefs + 1.96*ses
-names <- c("Internet penetration (ln)","Weeks since protest in same city (ln)","Weeks since protest in different city (ln)","Nightlights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
-names <- factor(names, levels = rev(c("Internet penetration (ln)","Weeks since protest in same city (ln)","Weeks since protest in different city (ln)","Nightlights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
+names <- c("Internet penetration","Weeks since protest in same city (ln)","Weeks since protest in different city (ln)","Nightlights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
+names <- factor(names, levels = rev(c("Internet penetration","Weeks since protest in same city (ln)","Weeks since protest in different city (ln)","Nightlights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
 
 dfplot <- data.frame(names, coefs, ses, ylo, yhi)
 
@@ -60,8 +60,8 @@ ses <- ses[2:10, 2]
 
 ylo <- coefs - 1.96*ses
 yhi <- coefs + 1.96*ses
-names <- c("Internet penetration (ln)","Weeks since protest in same city (ln)","Report ratio (ln)","Weeks since protest in different city (ln)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
-names <- factor(names, levels = rev(c("Internet penetration (ln)","Weeks since protest in same city (ln)","Report ratio (ln)","Weeks since protest in different city (ln)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
+names <- c("Internet penetration","Weeks since protest in same city (ln)","Report ratio (ln)","Weeks since protest in different city (ln)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
+names <- factor(names, levels = rev(c("Internet penetration","Weeks since protest in same city (ln)","Report ratio (ln)","Weeks since protest in different city (ln)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
 
 dfplot <- data.frame(names, coefs, ses, ylo, yhi)
 

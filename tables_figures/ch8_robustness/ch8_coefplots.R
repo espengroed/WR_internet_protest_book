@@ -6,9 +6,9 @@ ses <- fixef(ch8.cityweek.bare)
 ses <- ses[2:11, 2]
 ylo <- coefs - 1.96*ses
 yhi <- coefs + 1.96*ses
-names <- c("Internet penetration, receiving (ln)","Internet penetration, sending (ln)","Weeks since protest, sending (ln)","Weeks since protest, receiving (ln)","Night lights pc, receiving (ln)",
+names <- c("Internet penetration, receiving","Internet penetration, sending","Weeks since protest, sending (ln)","Weeks since protest, receiving (ln)","Night lights pc, receiving (ln)",
            "Population, receiving (ln)","Regional capital, receiving","National capital, receiving","Civil war", "Report ratio, receiving (ln)")
-names <- factor(names, levels = rev(c("Internet penetration, receiving (ln)","Internet penetration, sending (ln)","Weeks since protest, sending (ln)","Weeks since protest, receiving (ln)","Night lights pc, receiving (ln)",
+names <- factor(names, levels = rev(c("Internet penetration, receiving","Internet penetration, sending","Weeks since protest, sending (ln)","Weeks since protest, receiving (ln)","Night lights pc, receiving (ln)",
                                       "Population, receiving (ln)","Regional capital, receiving","National capital, receiving","Civil war", "Report ratio, receiving (ln)")))
 
 

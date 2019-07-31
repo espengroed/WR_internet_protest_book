@@ -35,7 +35,7 @@ varyingslope.prob <- ggplot(df, aes(x = x, y = prob, group = year)) +
   geom_line() +
   #  geom_point(alpha = 0.1, size = 1, color = "darkgrey") +
   facet_wrap(~year) + 
-  xlab("Internet penetration (ln)") + ylab("Probability of protest persistence") +
+  xlab("Internet penetration") + ylab("Probability of protest persistence") +
   #  scale_y_continuous(limits=c(-0.1,.4))+
   theme_bw() +
   geom_rug(sides="b") +
@@ -47,7 +47,7 @@ varyingslope.beta <- ggplot(df, aes(x = x, y = value, group = year)) +
   geom_line() +
   #  geom_point(alpha = 0.1, size = 1, color = "darkgrey") +
   facet_wrap(~year) + 
-  xlab("Internet penetration (ln)") + ylab("Probability of protest persistence") +
+  xlab("Internet penetration") + ylab("Probability of protest persistence") +
   geom_hline(yintercept = 0, lty=2) +
   theme_bw() +
   geom_rug(sides="b") +

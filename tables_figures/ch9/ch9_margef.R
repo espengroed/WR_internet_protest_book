@@ -196,7 +196,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration (ln)') + ylab('Change in probability of protest occurrence \n as freedom of association increases') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration') + ylab('Change in probability of protest occurrence \n as freedom of association increases') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 
@@ -411,7 +411,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration (ln)') + ylab('Change in probability of protest persistence \n as freedom of association increases') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration') + ylab('Change in probability of protest persistence \n as freedom of association increases') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 
@@ -627,7 +627,7 @@ dfplot <- data.frame(x, means, sdLower, sdUpper)
 p <- ggplot(dfplot, aes(x=x, y=means, ymin=sdLower, ymax=sdUpper)) + 
   geom_line() +
   geom_ribbon(aes(ymin=sdLower,ymax=sdUpper),alpha=0.3) +
-  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, sending (ln)') + ylab('Change in probability of protest \n as Freedom of association increases') +
+  theme_bw() + geom_hline(yintercept = 0, lty=2) + xlab('Internet penetration, sending') + ylab('Change in probability of protest \n as Freedom of association increases') +
   geom_rug(sides="b") +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
 

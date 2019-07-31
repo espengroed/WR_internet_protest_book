@@ -27,7 +27,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Protest in same city (t-1)",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
@@ -99,7 +99,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Number of protests t-1",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
@@ -166,7 +166,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Protest in same city (t-1)",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
@@ -236,7 +236,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Protest in same city (t-1)",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
@@ -247,7 +247,7 @@ row.names(results) <- c("Intercept",
                         "SD country (cowcode)",
                         "SD city (geonameid)",
                         "SD year",
-                        "SD Internet penetration (ln):year")
+                        "SD Internet penetration:year")
 
 colnames(results) <- c("Mean Beta", "2.5%", "97.5%")
 
@@ -368,7 +368,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("1 Intercept",
-                        "1 Internet penetration (ln)",
+                        "1 Internet penetration",
                         "1 Local Protest in same city (t-1)",
                         "1 National Protest in same city (t-1)",
                         "1 Protest in different city (t-1)",
@@ -381,7 +381,7 @@ row.names(results) <- c("1 Intercept",
                         "1 SD city (geonameid)",
                         "1 SD year",
                         "2 Intercept",
-                        "2 Internet penetration (ln)",
+                        "2 Internet penetration",
                         "2 Local Protest in same city (t-1)",
                         "2 National Protest in same city (t-1)",
                         "2 Protest in different city (t-1)",
@@ -410,7 +410,7 @@ require(stargazer)
 
 stargazer(ch6.cityweek.fixed, ch6.cityweek.fixed2, title="The effect of local Internet penetration on anti-regime protest
 (city-year resolution, linear probability models with fixed effects by city and year).", align=TRUE, dep.var.labels=c("Protest occurrence", "Number of protests"), omit=c("geonameid","year"),
-          covariate.labels=c("Internet penetration (ln)", 
+          covariate.labels=c("Internet penetration", 
                              "Protest in same city (t-1)", "Protest in different city (t-1)", 
                              "Night lights pc (ln)", "Population (ln)", "Regional capital", "National capital", 
                              "Civil war"), star.cutoffs=c(0.1,0.05,0.01), keep.stat = c("n"), label = "lpm",
@@ -455,7 +455,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
                         "Population (ln)",
@@ -501,7 +501,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Protest in different city (t-1)",
                         "Night lights pc (ln)",
                         "Population (ln)",

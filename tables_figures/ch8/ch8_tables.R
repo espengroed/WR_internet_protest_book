@@ -28,8 +28,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -85,8 +85,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -97,7 +97,7 @@ row.names(results) <- c("Intercept",
                         "SD country (cowcode)",
                         "SD city (geonameid)",
                         "SD year",
-                        "SD Internet penetration, sending (ln)")
+                        "SD Internet penetration, sending")
 
 colnames(results) <- c("Mean Beta", "2.5%", "97.5%")
 
@@ -136,8 +136,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -187,8 +187,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",
                         "Night lights pc, receiving (ln)",
@@ -242,8 +242,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Weeks since protest, sending (ln)",
                         "Last protest repressed, sending",
                         "Weeks since protest, receiving (ln)",
@@ -299,8 +299,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Distance, sending and receiving (ln)",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",

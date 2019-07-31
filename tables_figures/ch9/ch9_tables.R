@@ -24,7 +24,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Freedom of association",
                         "Protest in same city (t-1)",
                         "Protest in different city (t-1)",
@@ -33,7 +33,7 @@ row.names(results) <- c("Intercept",
                         "Regional capital",
                         "National capital",
                         "Civil war",
-                        "Internet penetration (ln) * Freedom of association",
+                        "Internet penetration * Freedom of association",
                         "SD country (cowcode)",
                         "SD city (geonameid)",
                         "SD year")
@@ -95,7 +95,7 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",  
-                        "Internet penetration (ln)",
+                        "Internet penetration",
                         "Freedom of association",
                         "Weeks since protest in same city (ln)",
                         "Weeks since protest in different city (ln)",
@@ -104,7 +104,7 @@ row.names(results) <- c("Intercept",
                         "Regional capital",
                         "National capital",
                         "Civil war",
-                        "Internet penetration (ln) * Freedom of association",
+                        "Internet penetration * Freedom of association",
                         "SD country (cowcode)",
                         "SD city (geonameid)",
                         "SD year")
@@ -168,8 +168,8 @@ lHPD <- apply(samples,2,function(x) quantile(x, .025))
 
 results <-t(rbind(meanBeta,lHPD,hHPD))
 row.names(results) <- c("Intercept",
-                        "Internet penetration, receiving (ln)",
-                        "Internet penetration, sending (ln)",
+                        "Internet penetration, receiving",
+                        "Internet penetration, sending",
                         "Freedom of association",
                         "Weeks since protest, sending (ln)",
                         "Weeks since protest, receiving (ln)",

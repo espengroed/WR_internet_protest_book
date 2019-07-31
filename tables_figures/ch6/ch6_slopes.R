@@ -9,7 +9,7 @@ plot(log(cityyear.data$numactivepc_l+1), cityyear.data$prob)
 gg1 <- ggplot(cityyear.data, aes(x = log(numactivepc_l+1), y = protests)) +
   geom_smooth(method = "glm", se = TRUE, formula = "y ~ log(x+1)", method.args = list(family = "binomial"(link = "logit")), color = "black") +
 #  geom_point(alpha = .1, size = 1, color = "darkgrey") +
-  xlab("Internet penetration (ln)") + ylab("Probability of protest occurrence") +
+  xlab("Internet penetration") + ylab("Probability of protest occurrence") +
   geom_hline(yintercept = 0, lty=2) + #geom_rug(sides="b") + expand_limits(y=c(0,.25)) +
   theme_bw() +
   geom_rug(sides="b") + coord_cartesian(ylim = c(0,.16)) +
@@ -21,7 +21,7 @@ gg2 <- ggplot(cityyear.data, aes(x = log(numactivepc_l+1), y = protests)) +
   geom_smooth(method = "glm", se = TRUE, formula = "y ~ poly(log(x+1),3,raw=T)", method.args = list(family = "binomial"(link = "logit")), color = "black") +
 #  geom_point(alpha = .1, size = 1, color = "darkgrey") +
   geom_hline(yintercept = 0, lty=2) +
-  xlab("Internet penetration (ln)") + ylab("Probability of protest occurrence") +
+  xlab("Internet penetration") + ylab("Probability of protest occurrence") +
   theme_bw() +
   geom_rug(sides="b") + coord_cartesian(ylim = c(0,.16)) +
   theme(axis.text=element_text(size=14), axis.title=element_text(size=15,face="bold"))
@@ -76,7 +76,7 @@ russia.iran.egypt <- ggplot(cnt.examples, aes(x = log(numactivepc_l+1), y = prot
     geom_smooth(method = "glm", se = TRUE, formula = "y ~ log(x+1)", method.args = list(family = "binomial"(link = "logit")), color = "black") +
 #  geom_point(alpha = 0.1, size = 1, color = "darkgrey") +
   facet_wrap(~cowcode, labeller = as_labeller(cnt.names), ncol=1) + 
-  xlab("Internet penetration (ln)") + ylab("Probability of protest occurrence") +
+  xlab("Internet penetration") + ylab("Probability of protest occurrence") +
   geom_hline(yintercept = 0, lty=2) +
   theme_bw() +
   geom_rug(sides="b") + coord_cartesian(ylim = c(0,.65)) +

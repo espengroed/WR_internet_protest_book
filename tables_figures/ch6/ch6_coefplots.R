@@ -9,8 +9,8 @@ ses <- ses[2:9, 2]
 
 ylo <- coefs - 1.96*ses
 yhi <- coefs + 1.96*ses
-names <- c("Internet penetration (ln)","Protest in same city (t-1)","Protest in different city (t-1)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
-names <- factor(names, levels = rev(c("Internet penetration (ln)","Protest in same city (t-1)","Protest in different city (t-1)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
+names <- c("Internet penetration","Protest in same city (t-1)","Protest in different city (t-1)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")
+names <- factor(names, levels = rev(c("Internet penetration","Protest in same city (t-1)","Protest in different city (t-1)","Night lights pc (ln)","Population (ln)","Regional capital","National capital","Civil war")))
 
 dfplot <- data.frame(names, coefs, ses, ylo, yhi)
 
